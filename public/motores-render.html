@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas del navegador</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Incio</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Motores de render: de archivos a píxeles</h1>
+        <p>
+            Los motores de renderizado son programas que traducen nuestro código en un lenguaje que entienda el navegador, de esta manera el programa sabrá que es lo que tiene que mostrar por pantalla al usuario.
+        </p>
+    </header>
+    <section>
+        <article>
+            <h2>¿Cuáles son los motores del navegador?</h2>
+            <p>
+                Los navegadores tienen sus propios motores: Chrome - Blink, Edge - Edge HTML, Safari - Webkit y Firefox - Gecko. Todos realizan esta compilación de manera diferente, pero con el mismo resultado, es decir, convierten los archivos a píxeles
+            </p>
+            <img src="/source/motores.png" alt="motores render">
+        </article>
+        <article>
+            <h2>Proceso de renderizado del motor del navegador</h2>
+            <p>
+                El motor del navegador realiza 5 pasos o procesos para compilar nuestro código hasta el renderizado por pantalla. Estos pasos son los siguientes:
+            </p>
+            <ol>
+                <li>
+                    Transforma los archivos a un árbol de objetos HTML o CSS, estos se denominan DOM (Document Object Model) y CSSDOM (Cascade Style Sheet Object Model), respectivamente. Cada nodo en el árbol es una representación de los elementos que contiene el archivo HTML o CSS.
+                </li>
+                <li>
+                    Calcula el estilo correspondiente a cada nodo del DOM relacionado al CSSDOM. 
+                </li>
+                <li>
+                    Calcula las dimensiones de cada nodo y dónde va en la pantalla.
+                </li>
+                <li>
+                    Pinta o renderiza los diferentes elementos como cajas o contenedores.
+                </li>
+                <li>
+                    Agrupa todas las cajas en diferentes capas para convertirlas en una imagen que se renderiza en pantalla.
+                </li>
+                <br>
+                <img src="/source/pasosnavegador.png" alt="pasos navegador">
+            </ol>
+        </article>
+    </section>
+</body>
+</html>
