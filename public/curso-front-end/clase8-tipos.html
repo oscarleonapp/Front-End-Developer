@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas del navegador</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../../index.html">Incio</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Tipos de selectores: básicos y combinadores</h1>
+        <p>
+            El selector define el elemento o conjunto de elementos HTML a los cuales se añadirán estilos.
+            Existen nombres de colores propios de CSS que puedes explorar. A continuación veamos más sobre selectores.
+        </p>
+    </header>
+    <section>
+        <h2>Cuáles son los selectores básicos</h2>
+        <p>
+            Un selector básico es la mínima expresión de CSS para colocar estilos.
+        </p>
+        <p>
+            selector {estilos}
+        </p>
+
+        <article>
+            <img src="/source/selectorescss.png" alt="">
+        </article>
+    </section>
+    <section>
+        <h2>1) Combinador de descendientes</h2>
+        <p>
+            Selecciona todos los elementos del selector de la derecha que son hijos del selector de la izquierda,
+            independientemente de la profundidad. Estos selectores están separados por un espacio.
+        </p>
+        <div>
+            <p>
+                padre hijos {
+                    <br>
+                    /* Todos los hijos del padre */
+                }
+            </p>
+            <p>
+                div p {
+                    <br>
+                    /* Tods los hijos p de div */
+                }
+            </p>
+            <p>
+                .container img{
+                    <br>
+                    /* Todos los hijos img de la clase container */
+                }
+            </p>
+            <h3>Desafio del combinador de descendientes</h3>
+            <p>Intenta colocar un color a todas las etiquetas li que son hijos de la clase container</p>
+        </div>
+    </section>
+    <section>
+        <h2>Combinador de hijo directo</h2>
+        <p>
+            Selecciona todos los elementos del selector de la derecha que son hijos directos del selector de la izquierda.
+            Estos selectores están separados por  >
+        </p>
+        <div>
+            <p>
+                padre > hijos_directos {
+                    <br>
+                    /* Todos los hijos directos del padre */
+                }
+            </p>
+            <p>
+                div > p {
+                    <br>
+                    /* Todos los hijos directros p de div */
+                }
+            </p>
+            <p>
+                .container > img {
+                    <br>
+                    /* Todos los hijos img de la clase container */
+                }
+            </p>
+        </div>
+        <h2>Desafio de combinador de hijo directo</h2>
+        <p>
+            Intenta colocar un color de letra a todos las etiquetas p que son hijos directos de la clase container
+        </p>
+    </section>
+    <section>
+        <h2>Combinador de elemento adyacente</h2>
+        <p>
+            Selecciona todos los elementos del selector de la derecha que están adyacente al selector de la izquierda.
+            Estos selectores están separados por + 
+        </p>
+        <div>
+            <p>
+                elemento + adyacente {
+                    <br>
+                    /* Elementos adyacentes */
+                }
+            </p>
+            <p>
+                div + p {
+                    <br>
+                    /* Todos los p adyacentes a div */
+                }
+            </p>
+            <p>
+                .container + img {
+                    <br>
+                    /* Todos los img adyacentes a la clase container
+                }
+            </p>
+        </div>
+        <p>
+            Adyacentes significa que comparten el mismo padre y está situado inmediatamente hacia abajo de otro elemento.
+            Por ejemplo, en el siguiente código, div esta adyacente a h1 y p esta adyacente a div. Sin embargo, h1 no esta
+            adyacente a div y div no esta adyacente a p
+        </p>
+        <div>
+            h1 Soy un título h1 
+            div Soy un div div 
+            p Soy un párrafo p 
+        </div>
+        <h2>
+            Desafio de combinador de elemento adyacente
+        </h2>
+    </section>
+</body>
+</html>
