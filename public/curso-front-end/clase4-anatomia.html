@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herramientas del navegador</title>
+    <title>Clase 4</title>
 </head>
 <body>
     <nav>
@@ -15,15 +15,88 @@
         </ul>
     </nav>
     <header>
-        <h1>Para qué sirven las herramientas del navegador</h1>
+        <p>
+            Antes de empezar a escribir código HTML, debemos conocer la anatomía de un documento y sus elementos.
+        </p>
     </header>
     <section>
-        <p>
-            Las herramientas del navegador son importantes para visualizar lo que ocurre con el código generado. Entre una de la opciones está identificar los elementos que están estructurados en la página web con sus respectivos estilos. 
-        </p>
-        <p>
-            Las herramientas de desarrollador se despliegan con la combinación de teclas F12 / Ctrl + Shift + I / Cmd + Opt + I o clic derecho e “Inspeccionar” en tu navegador preferido (se recomienda Google Chrome).
-        </p>
+        <article>
+            <h2>¿Cuáles son los elementos HTML?</h2>
+            <p>
+                Los elementos son cada una de las partes que conforman un archivo HTML. Su estructura contiene:
+            </p>
+            <ul>
+                <li>
+                    Etiquetas: es la representación de un elemento HTML. Se dividen en etiquetas de apertura, representadas por <etiqueta> y etiquetas de cierre, representadas por </etiqueta>.
+                </li>
+                <li>
+                    Contenido: es el texto o elementos encerrados por la etiqueta, este valor es opcional en algunas de ellas. 
+                </li>
+            </ul>
+            <img src="../../source/elemento.png" alt="Elemento HTML">
+        </article>
+        <article>
+            <h2>Qué son atributos HTML</h2>
+            <p>
+                Los atributos HTML son propiedades en la etiqueta de apertura que manejan el comportamiento del elemento. Su valor está envuelto en comillas.
+            </p>
+            <img src="../../source/atributos.png" alt="Atributos HTML">
+        </article>
+        <article>
+            <h2>Qué son los elementos vacíos</h2>
+            <p>
+                Los elementos vacíos son aquellos que únicamente se representan en una etiqueta de apertura. Por ejemplo, la etiqueta de imagen: <img...>.
+            </p>
+            <img src="../../source/elementovacio.png" alt="Elemento vacio">
+            <p>
+                Estas etiquetas pueden cerrarse en la misma etiqueta de apertura, utilizando la barra inclinada “/” al final: <img.../>
+            </p>
+        </article>
+        <article>
+            <h2>Qué es el anidamiento de elementos</h2>
+            <p>
+                El anidamiento de elementos HTML consiste en envolver varias etiquetas en otras etiquetas.
+            </p>
+            <p>
+                Interpreta a cada elemento HTML como una caja donde puedes guardar diferentes elementos u otras cajas. Estas cajas tendrán diferentes tamaños y estarán colocadas junto a otras.
+            </p>
+            <img src="../../source/anidamientodeimagen.png" alt="Anidamiento de imagen">
+            <p>
+                Estas etiquetas pueden cerrarse en la misma etiqueta de apertura, utilizando la barra inclinada “/” al final: <img.../>
+            </p>
+            <p>
+                Aquellas etiquetas que envuelven a otras se las denomina “padres”. Es decir, <section> es padre de <h1>, <p>, <ul>, y a su vez <ul> es padre de 3 etiquetas <li>. 
+            </p>
+        </article>
+        <article>
+            <h1>Estructura básica de un documento HTML</h1>
+            <p>
+                La estructura básica de un documento HTML está configurado por las siguientes etiquetas principales: 
+            </p>
+            <img src="../../source/estructurahtml.png" alt="Estructura HTML">
+        </article>
+        <article>
+            <h3>Etiqueta Doctype</h3>
+            <p>
+                La etiqueta <!DOCTYPE html> especifica que el archivo se maneje con la versión 5 de HTML.
+            </p>
+            <h3>Etiqueta html</h3>
+            <p>
+                La etiqueta <html> define el elemento raíz de un documento HTML. Todos los demás elementos deben estar contenidos dentro de este elemento raíz. En esta etiqueta se especifica el lenguaje de la página web mediante la propiedad lang.
+            </p>
+            <h3>Etiqueta head</h3>
+            <p>
+                La etiqueta <head> define la metainformación, es decir, toda información que no es contenido como tal de la página web. Por ejemplo, los enlaces a archivos CSS y JavaScript, el título y la imagen que aparecen en la pestaña del navegador. Esto es importante para motores de búsqueda como Google.
+            </p>
+            <h3>Etiqueta body</h3>
+            <p>
+                La etiqueta <body> define el contenido de la página web. Debe ser hijo cercano de <html> y padre de todas las etiquetas HTML, excepto por aquellas que definan metainformación.
+            </p>
+            <h3>Comentarios de HTML</h3>
+            <p>
+                Los comentarios de HTML consiste en señalar algo que se ignorará. Para establecer un comentario HTML se lo envuelve entre <!-- y -->, independiente de la cantidad de líneas.
+            </p>
+        </article>
     </section>
 </body>
 </html>
